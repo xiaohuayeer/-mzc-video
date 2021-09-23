@@ -2,7 +2,7 @@
  * @Author: mzc
  * @Date: 2021-09-22 16:01:40
  * @Last Modified by: mzc
- * @Last Modified time: 2021-09-22 17:37:28
+ * @Last Modified time: 2021-09-23 15:09:00
  */
 /**
  * @desc 单屏组件
@@ -14,6 +14,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Player from "./player";
 import WjPng from "./i/jp.png";
 import ReactLoading from "react-loading";
+import { Select } from "antd";
 import "./screen.css";
 
 export default function OneScreen(props) {
@@ -73,15 +74,27 @@ export default function OneScreen(props) {
         style={{ display: "block" }}
       >
         <div className="mzc-selectList">
-          <select name="" id="" value={screenId} onChange={onChange}>
+          <Select
+            value={screenId}
+            className="mzc-hls-select"
+            onChange={onChange}
+            style={{
+              width: 110,
+              backgroundColor: "transparent",
+              color: "#fff",
+            }}
+            suffixIcon={<span> </span>}
+            getPopupContainer={(trigerNode) => trigerNode.parentNode}
+            dropdownStyle={{ backgroundColor: "#fff" }}
+          >
             {list.map((item) => {
               return (
-                <option key={item.id} value={item.id}>
+                <Select.Option key={item.id} value={item.id}>
                   {item.name}
-                </option>
+                </Select.Option>
               );
             })}
-          </select>
+          </Select>
         </div>
         <div className="mzc-screenShot" onClick={handleScreenShot}>
           <span>截图标记</span>

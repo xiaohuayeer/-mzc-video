@@ -37,6 +37,24 @@
   z-index: 10000;
 }
 
+.mzc-hls-select .ant-select-arrow {
+  /* padding-top: 3px;
+  display: block; */
+  top: 20px;
+}
+
+.mzc-hls-select .ant-select-arrow span {
+  display: block;
+  height: 0;
+  width: 0;
+  border: 4.5px solid transparent;
+  border-top: 4.5px solid #fff;
+}
+.mzc-hls-select .ant-select-selector {
+  background-color: transparent !important;
+  border: none !important;
+}
+
 .mzc-screenLoading {
   position: absolute;
   width: 100%;

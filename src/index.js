@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import ReactDOM from "react-dom";
 import Index from "./components/index";
+import "antd/dist/antd.css";
 
 const App = (props) => {
   const { width, height, stuList, teaList, otherList } = props;
