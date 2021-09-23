@@ -2,7 +2,7 @@
  * @Author: mzc
  * @Date: 2021-09-22 16:01:40
  * @Last Modified by: mzc
- * @Last Modified time: 2021-09-23 15:09:00
+ * @Last Modified time: 2021-09-23 16:16:50
  */
 /**
  * @desc 单屏组件
@@ -16,6 +16,7 @@ import WjPng from "./i/jp.png";
 import ReactLoading from "react-loading";
 import { Select } from "antd";
 import "./screen.css";
+import "antd/dist/antd.css";
 
 export default function OneScreen(props) {
   const { list, width, height, id } = props;
@@ -43,11 +44,10 @@ export default function OneScreen(props) {
     }, 3000);
   };
   const handleLeave = () => setDisplay(false);
-  const onChange = (e) => {
+  const onChange = (value) => {
     setLoading(true);
-    const id = e.target.value;
-    setScreenId(id);
-    setUrl(list.find((item) => item.id === id).url);
+    setScreenId(value);
+    setUrl(list.find((item) => item.id === value).url);
     setTimeout(() => {
       setLoading(false);
     }, 100);
@@ -70,8 +70,7 @@ export default function OneScreen(props) {
     >
       <div
         className="mzc-hlsMask"
-        // style={{ display: display ? "block" : "none" }}
-        style={{ display: "block" }}
+        style={{ display: display ? "block" : "none" }}
       >
         <div className="mzc-selectList">
           <Select
@@ -81,7 +80,7 @@ export default function OneScreen(props) {
             style={{
               width: 110,
               backgroundColor: "transparent",
-              color: "#fff",
+              fontSize: 14,
             }}
             suffixIcon={<span> </span>}
             getPopupContainer={(trigerNode) => trigerNode.parentNode}

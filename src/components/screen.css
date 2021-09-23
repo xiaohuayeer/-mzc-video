@@ -36,7 +36,9 @@
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 10000;
 }
-
+.mzc-hls-select .ant-select-selection-item {
+  color: #fff;
+}
 .mzc-hls-select .ant-select-arrow {
   /* padding-top: 3px;
   display: block; */
@@ -66,8 +68,10 @@
 }
 
 .mzc-selectList {
-  width: 200px;
-  height: 300px;
+  width: 110px;
+  height: 200px;
+  position: absolute;
+  top: 2px;
 }
 
 .mzc-screenShot {
