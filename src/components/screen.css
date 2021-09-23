@@ -1,0 +1,67 @@
+.mzc-hlsScreen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.mzc-screenChange {
+  position: absolute;
+  right: 0;
+  bottom: -32px;
+  height: 32px;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.mzc-screenChange span {
+  display: block;
+  width: 50px;
+  background-color: #ccc;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  font-size: 15px;
+}
+.mzc-screenChange span.active {
+  color: #30bf99;
+}
+.mzc-hlsOneScreen {
+  position: relative;
+}
+.mzc-hlsMask {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+}
+
+.mzc-screenLoading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.mzc-selectList {
+  width: 200px;
+  height: 300px;
+}
+
+.mzc-screenShot {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 0;
+  color: #fff;
+  font-size: 14px;
+  width: 75px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

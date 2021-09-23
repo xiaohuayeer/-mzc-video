@@ -1,0 +1,21 @@
+.mzc-hlsVideo {
+  position: relative;
+  background-color: #000;
+}
+
+.mzc-hlsErr,
+.mzc-hlsHasSrc,
+.mzc-hlsLoading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+}
+.mzc-hlsErr a {
+  color: #30bf99;
+  cursor: pointer;
+}
