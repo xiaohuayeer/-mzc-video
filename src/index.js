@@ -6,22 +6,20 @@ const App = (props) => {
   const { width, height, stuList, teaList, otherList } = props;
   const { screenShot } = props;
 
-  return (
-    <div style={{ width, height }}>
-      {useMemo(() => {
-        return (
-          <Index
-            width={width}
-            height={height}
-            teaList={teaList}
-            stuList={stuList}
-            otherList={otherList}
-            screenShot={screenShot}
-          />
-        );
-      }, [teaList, stuList, otherList, width, height])}
-    </div>
-  );
+  const content = useMemo(() => {
+    return (
+      <Index
+        width={width}
+        height={height}
+        teaList={teaList}
+        stuList={stuList}
+        otherList={otherList}
+        screenShot={screenShot}
+      />
+    );
+  }, [teaList, stuList, otherList, width, height]);
+
+  return <div style={{ width, height }}>{content}</div>;
 };
 
 //要实现局部热更新，必须要添加此句

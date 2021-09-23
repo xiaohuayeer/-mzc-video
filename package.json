@@ -1,7 +1,7 @@
 {
-  "name": "mzc-video",
-  "version": "1.0.3",
-  "main": "lib/change-button.js",
+  "name": "jfm-video",
+  "version": "0.0.1",
+  "main": "lib/mzc-video.js",
   "author": "mzc",
   "license": "MIT",
   "devDependencies": {
@@ -26,12 +26,12 @@
     "url-loader": "4.1.0"
   },
   "dependencies": {
-    "axios": "^0.21.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-loading": "^2.0.3",
-    "xgplayer": "2.28.1",
-    "xgplayer-hls.js": "2.5.2"
+    "xgplayer": "^2.28.1",
+    "xgplayer-hls.js": "^2.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-loading": "2.0.3",
+    "axios": "0.19.2"
   },
   "scripts": {
     "build": "webpack --config ./scripts/webpack.prod.config.js",

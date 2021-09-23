@@ -1,40 +1,40 @@
-const path = require('path');
-const webpack = require('webpack');
-const webpackConfigBase = require('./webpack.base.config');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { merge } = require('webpack-merge');
+const path = require("path");
+const webpack = require("webpack");
+const webpackConfigBase = require("./webpack.base.config");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { merge } = require("webpack-merge");
 
 function resolve(relatedPath) {
-  return path.join(__dirname, relatedPath)
+  return path.join(__dirname, relatedPath);
 }
 
 const webpackConfigDev = {
-  mode: 'development',
+  mode: "development",
 
   entry: {
-    app: [resolve('../src/index.js')],
+    app: [resolve("../src/index.js")],
   },
 
   output: {
-    path: resolve('../lib'), 
-    filename: 'change-button.js',
+    path: resolve("../lib"),
+    filename: "mzc-video.js",
   },
 
-  devtool: 'cheap-module-eval-source-map',   
+  devtool: "cheap-module-eval-source-map",
 
   devServer: {
-    contentBase: resolve('../lib'), 
+    contentBase: resolve("../lib"),
     hot: true,
-    open: true,   
-    host: 'localhost',
+    open: true,
+    host: "localhost",
     port: 8085,
   },
 
   plugins: [
-    new HtmlWebpackPlugin({template: './public/index.html', }),
-    new webpack.NamedModulesPlugin(),  
-    new webpack.HotModuleReplacementPlugin()
-  ]
-}
+    new HtmlWebpackPlugin({ template: "./public/index.html" }),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
+};
 
-module.exports = merge(webpackConfigBase, webpackConfigDev)
+module.exports = merge(webpackConfigBase, webpackConfigDev);

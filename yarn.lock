@@ -883,8 +883,8 @@
 
 "@babel/runtime@^7.8.4":
   version "7.15.4"
-  resolved "https://registry.nlark.com/@babel/runtime/download/@babel/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
-  integrity sha1-/RfRa/34eObdAtGXU6OfqKjZyEo=
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
+  integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1378,12 +1378,12 @@ autoprefixer@^9.8.4:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-axios@^0.21.4:
-  version "0.21.4"
-  resolved "https://registry.nlark.com/axios/download/axios-0.21.4.tgz?cache=0&sync_timestamp=1630942656836&other_urls=https%3A%2F%2Fregistry.nlark.com%2Faxios%2Fdownload%2Faxios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
-  integrity sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=
+axios@0.19.2:
+  version "0.19.2"
+  resolved "https://registry.nlark.com/axios/download/axios-0.19.2.tgz?cache=0&sync_timestamp=1630942656836&other_urls=https%3A%2F%2Fregistry.nlark.com%2Faxios%2Fdownload%2Faxios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
   dependencies:
-    follow-redirects "^1.14.0"
+    follow-redirects "1.5.10"
 
 babel-loader@^8.1.0:
   version "8.2.2"
@@ -1788,8 +1788,8 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001254:
 
 chalk@^2.0.0, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
-  resolved "https://registry.nlark.com/chalk/download/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
-  integrity sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=
+  resolved "https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
+  integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
   dependencies:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
@@ -1957,8 +1957,8 @@ colorette@^1.2.1, colorette@^1.3.0:
 
 commander@^2.15.1, commander@^2.20.0:
   version "2.20.3"
-  resolved "https://registry.nlark.com/commander/download/commander-2.20.3.tgz?cache=0&sync_timestamp=1631257318022&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
-  integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
+  resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
 commander@^4.1.1:
   version "4.1.1"
@@ -2324,16 +2324,16 @@ cyclist@^1.0.1:
 
 d@1, d@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.nlark.com/d/download/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"
-  integrity sha1-hpgJU3LVjb7jRv/Qxwk/mfj561o=
+  resolved "https://registry.npmjs.org/d/-/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"
+  integrity sha512-m62ShEObQ39CfralilEQRjH6oAMtNCV1xJyEx5LpRYUVN+EviphDgUc/F3hnYbADmkiNs67Y+3ylmlG7Lnu+FA==
   dependencies:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-danmu.js@^0.5.1:
+danmu.js@^0.5.9:
   version "0.5.9"
-  resolved "https://registry.nlark.com/danmu.js/download/danmu.js-0.5.9.tgz#fa9068da71a50ab629444ed3d1c24068247dcdd6"
-  integrity sha1-+pBo2nGlCrYpRE7T0cJAaCR9zdY=
+  resolved "https://registry.npmjs.org/danmu.js/-/danmu.js-0.5.9.tgz#fa9068da71a50ab629444ed3d1c24068247dcdd6"
+  integrity sha512-VvEVHv8L0HBTbztvSqn0uALpoiYMWGmoMCFH+Ym/cpwdEDDbWIRho6CEgIs5sRDl+X63no8g4CBFv3BC/rS4nQ==
   dependencies:
     event-emitter "^0.3.5"
 
@@ -2341,6 +2341,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.nlark.com/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=
+  dependencies:
+    ms "2.0.0"
+
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.nlark.com/debug/download/debug-3.1.0.tgz?cache=0&sync_timestamp=1625374675284&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fdebug%2Fdownload%2Fdebug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
   dependencies:
     ms "2.0.0"
 
@@ -2382,8 +2389,8 @@ deep-equal@^1.0.1:
 
 deepmerge@2.0.1:
   version "2.0.1"
-  resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-2.0.1.tgz#25c1c24f110fb914f80001b925264dd77f3f4312"
-  integrity sha1-JcHCTxEPuRT4AAG5JSZN138/QxI=
+  resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-2.0.1.tgz#25c1c24f110fb914f80001b925264dd77f3f4312"
+  integrity sha512-VIPwiMJqJ13ZQfaCsIFnp5Me9tnjURiaIFxfz7EH0Ci0dTSQpZtSLrqOicXqEd/z2r+z+Klk9GzmnRsgpgbOsQ==
 
 default-gateway@^4.2.0:
   version "4.2.0"
@@ -2572,13 +2579,13 @@ dot-prop@^5.2.0:
 
 downloadjs@1.4.7:
   version "1.4.7"
-  resolved "https://registry.npm.taobao.org/downloadjs/download/downloadjs-1.4.7.tgz#f69f96f940e0d0553dac291139865a3cd0101e3c"
+  resolved "https://registry.npmjs.org/downloadjs/-/downloadjs-1.4.7.tgz#f69f96f940e0d0553dac291139865a3cd0101e3c"
   integrity sha1-9p+W+UDg0FU9rCkROYZaPNAQHjw=
 
 draggabilly@^2.2.0:
   version "2.3.0"
-  resolved "https://registry.npm.taobao.org/draggabilly/download/draggabilly-2.3.0.tgz#e0e653e09b938eb7ae654c4b7600114b24a2ee50"
-  integrity sha1-4OZT4JuTjreuZUxLdgARSySi7lA=
+  resolved "https://registry.npmjs.org/draggabilly/-/draggabilly-2.3.0.tgz#e0e653e09b938eb7ae654c4b7600114b24a2ee50"
+  integrity sha512-gSsHrIE3rYK9fhK2vQC83t2YsbKbAHQkLsxsXw9TI3LUziq8EZXjX8g7eaf/NlrtWTFqgz7FmP/kdIvLjt64wA==
   dependencies:
     get-size "^2.0.2"
     unidragger "^2.3.0"
@@ -2701,8 +2708,8 @@ es-to-primitive@^1.2.1:
 
 es5-ext@^0.10.35, es5-ext@^0.10.50, es5-ext@~0.10.14:
   version "0.10.53"
-  resolved "https://registry.nlark.com/es5-ext/download/es5-ext-0.10.53.tgz#93c5a3acfdbef275220ad72644ad02ee18368de1"
-  integrity sha1-k8WjrP2+8nUiCtcmRK0C7hg2jeE=
+  resolved "https://registry.npmjs.org/es5-ext/-/es5-ext-0.10.53.tgz#93c5a3acfdbef275220ad72644ad02ee18368de1"
+  integrity sha512-Xs2Stw6NiNHWypzRTY1MtaG/uJlwCk8kH81920ma8mvN8Xq1gsfhZvpkImLQArw8AHnv8MT2I45J3c0R8slE+Q==
   dependencies:
     es6-iterator "~2.0.3"
     es6-symbol "~3.1.3"
@@ -2710,7 +2717,7 @@ es5-ext@^0.10.35, es5-ext@^0.10.50, es5-ext@~0.10.14:
 
 es6-iterator@~2.0.3:
   version "2.0.3"
-  resolved "https://registry.nlark.com/es6-iterator/download/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
+  resolved "https://registry.npmjs.org/es6-iterator/-/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
   integrity sha1-p96IkUGgWpSwhUQDstCg+/qY87c=
   dependencies:
     d "1"
@@ -2719,8 +2726,8 @@ es6-iterator@~2.0.3:
 
 es6-symbol@^3.1.1, es6-symbol@~3.1.3:
   version "3.1.3"
-  resolved "https://registry.npm.taobao.org/es6-symbol/download/es6-symbol-3.1.3.tgz#bad5d3c1bcdac28269f4cb331e431c78ac705d18"
-  integrity sha1-utXTwbzawoJp9MszHkMceKxwXRg=
+  resolved "https://registry.npmjs.org/es6-symbol/-/es6-symbol-3.1.3.tgz#bad5d3c1bcdac28269f4cb331e431c78ac705d18"
+  integrity sha512-NJ6Yn3FuDinBaBRWl/q5X/s4koRHBrgKAu+yGI6JCBeiu3qrcbJhwT2GeR/EXVfylRk8dpQVJoLEFhK+Mu31NA==
   dependencies:
     d "^1.0.1"
     ext "^1.1.2"
@@ -2782,12 +2789,12 @@ etag@~1.8.1:
 
 ev-emitter@^1.0.1:
   version "1.1.1"
-  resolved "https://registry.npm.taobao.org/ev-emitter/download/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
-  integrity sha1-jxiwzlx2pdGAF/ccCnlcZbkTjyo=
+  resolved "https://registry.npmjs.org/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
+  integrity sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
 
 event-emitter@^0.3.5:
   version "0.3.5"
-  resolved "https://registry.npm.taobao.org/event-emitter/download/event-emitter-0.3.5.tgz#df8c69eef1647923c7157b9ce83840610b02cc39"
+  resolved "https://registry.npmjs.org/event-emitter/-/event-emitter-0.3.5.tgz#df8c69eef1647923c7157b9ce83840610b02cc39"
   integrity sha1-34xp7vFkeSPHFXuc6DhAYQsCzDk=
   dependencies:
     d "1"
@@ -2795,8 +2802,8 @@ event-emitter@^0.3.5:
 
 eventemitter3@^4.0.0, eventemitter3@^4.0.7:
   version "4.0.7"
-  resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-4.0.7.tgz?cache=0&sync_timestamp=1598518152708&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feventemitter3%2Fdownload%2Feventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
-  integrity sha1-Lem2j2Uo1WRO9cWVJqG0oHMGFp8=
+  resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 events@^3.0.0:
   version "3.3.0"
@@ -2889,8 +2896,8 @@ express@^4.17.1:
 
 ext@^1.1.2:
   version "1.5.0"
-  resolved "https://registry.nlark.com/ext/download/ext-1.5.0.tgz?cache=0&sync_timestamp=1629712241743&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fext%2Fdownload%2Fext-1.5.0.tgz#e93b97ae0cb23f8370380f6107d2d2b7887687ad"
-  integrity sha1-6TuXrgyyP4NwOA9hB9LSt4h2h60=
+  resolved "https://registry.npmjs.org/ext/-/ext-1.5.0.tgz#e93b97ae0cb23f8370380f6107d2d2b7887687ad"
+  integrity sha512-+ONcYoWj/SoQwUofMr94aGu05Ou4FepKi7N7b+O8T4jVfyIsZQV1/xeS8jpaBzF0csAk0KLXoHCxU7cKYZjo1Q==
   dependencies:
     type "^2.5.0"
 
@@ -3031,7 +3038,14 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0, follow-redirects@^1.14.0:
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.nlark.com/follow-redirects/download/follow-redirects-1.5.10.tgz?cache=0&sync_timestamp=1631622129411&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha1-e3qfmuov3/NnhqlP9kPtB/T/Xio=
+  dependencies:
+    debug "=3.1.0"
+
+follow-redirects@^1.0.0:
   version "1.14.4"
   resolved "https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.4.tgz?cache=0&sync_timestamp=1631622129411&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
   integrity sha1-g4/fSKi73XnlLuUfsclOPtmLk3k=
@@ -3068,8 +3082,8 @@ from2@^2.1.0:
 
 fs-extra@^5.0.0:
   version "5.0.0"
-  resolved "https://registry.nlark.com/fs-extra/download/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
-  integrity sha1-QU0BEM3QZwVzTQVWUsVBEmDDGr0=
+  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
+  integrity sha512-66Pm4RYbjzdyeuqudYqhFiNBbCIuI9kgRqLPSHIlXHidW8NIQtVdkM1yeZ4lXwuhbTETv3EUGMNHAAw6hiundQ==
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
@@ -3136,8 +3150,8 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
 
 get-size@^2.0.2:
   version "2.0.3"
-  resolved "https://registry.npm.taobao.org/get-size/download/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
-  integrity sha1-VKHQJWsg6nrGRlFnViAnaZQa0u8=
+  resolved "https://registry.npmjs.org/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
+  integrity sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q==
 
 get-stream@^4.0.0:
   version "4.1.0"
@@ -3986,7 +4000,7 @@ json5@^2.1.2:
 
 jsonfile@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.nlark.com/jsonfile/download/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  resolved "https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
   integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   optionalDependencies:
     graceful-fs "^4.1.6"
@@ -4428,7 +4442,7 @@ neo-async@^2.5.0, neo-async@^2.6.1:
 
 next-tick@~1.0.0:
   version "1.0.0"
-  resolved "https://registry.nlark.com/next-tick/download/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
+  resolved "https://registry.npmjs.org/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
 nice-try@^1.0.4:
@@ -5373,10 +5387,10 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-dom@^16.13.1:
-  version "16.14.0"
-  resolved "https://registry.nlark.com/react-dom/download/react-dom-16.14.0.tgz?cache=0&sync_timestamp=1631898940678&other_urls=https%3A%2F%2Fregistry.nlark.com%2Freact-dom%2Fdownload%2Freact-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
-  integrity sha1-etg47Cmnd/s8dcOhkPZhz5Kri4k=
+react-dom@16.13.1:
+  version "16.13.1"
+  resolved "https://registry.npmmirror.com/react-dom/download/react-dom-16.13.1.tgz?cache=0&sync_timestamp=1632328459995&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact-dom%2Fdownload%2Freact-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
+  integrity sha1-wb03MxoEhsB47lTEdAcgmTsuDn8=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -5388,15 +5402,15 @@ react-is@^16.8.1:
   resolved "https://registry.nlark.com/react-is/download/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
-react-loading@^2.0.3:
+react-loading@2.0.3:
   version "2.0.3"
-  resolved "https://registry.npm.taobao.org/react-loading/download/react-loading-2.0.3.tgz#e8138fb0c3e4674e481b320802ac7048ae14ffb9"
-  integrity sha1-6BOPsMPkZ05IGzIIAqxwSK4U/7k=
+  resolved "https://registry.npmjs.org/react-loading/-/react-loading-2.0.3.tgz#e8138fb0c3e4674e481b320802ac7048ae14ffb9"
+  integrity sha512-Vdqy79zq+bpeWJqC+xjltUjuGApyoItPgL0vgVfcJHhqwU7bAMKzysfGW/ADu6i0z0JiOCRJjo+IkFNkRNbA3A==
 
-react@^16.13.1:
-  version "16.14.0"
-  resolved "https://registry.nlark.com/react/download/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
-  integrity sha1-lNd23dCqo32j7aj8W2sYpMmjEU0=
+react@16.13.1:
+  version "16.13.1"
+  resolved "https://registry.npmmirror.com/react/download/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
+  integrity sha1-LoGIIvGpdDEiwGPWQQ2FweOv5I4=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -6303,13 +6317,13 @@ type-is@~1.6.17, type-is@~1.6.18:
 
 type@^1.0.1:
   version "1.2.0"
-  resolved "https://registry.npm.taobao.org/type/download/type-1.2.0.tgz#848dd7698dafa3e54a6c479e759c4bc3f18847a0"
-  integrity sha1-hI3XaY2vo+VKbEeedZxLw/GIR6A=
+  resolved "https://registry.npmjs.org/type/-/type-1.2.0.tgz#848dd7698dafa3e54a6c479e759c4bc3f18847a0"
+  integrity sha512-+5nt5AAniqsCnu2cEQQdpzCAh33kVx8n0VoFidKpB1dVVLAN/F+bgVOqOJqOnEnrhp222clB5p3vUlD+1QAnfg==
 
 type@^2.5.0:
   version "2.5.0"
-  resolved "https://registry.npm.taobao.org/type/download/type-2.5.0.tgz#0a2e78c2e77907b252abe5f298c1b01c63f0db3d"
-  integrity sha1-Ci54wud5B7JSq+XymMGwHGPw2z0=
+  resolved "https://registry.npmjs.org/type/-/type-2.5.0.tgz#0a2e78c2e77907b252abe5f298c1b01c63f0db3d"
+  integrity sha512-180WMDQaIMm3+7hGXWf12GtdniDEy7nYcyFMKJn/eZz/6tSLXrUN9V0wKSbMjej0I1WHWbpREDEKHtqPQa9NNw==
 
 typedarray@^0.0.6:
   version "0.0.6"
@@ -6351,8 +6365,8 @@ unicode-property-aliases-ecmascript@^2.0.0:
 
 unidragger@^2.3.0:
   version "2.3.1"
-  resolved "https://registry.npm.taobao.org/unidragger/download/unidragger-2.3.1.tgz#2e8c34feff61affa96dc895234ddfc1ea4ec7515"
-  integrity sha1-Low0/v9hr/qW3IlSNN38HqTsdRU=
+  resolved "https://registry.npmjs.org/unidragger/-/unidragger-2.3.1.tgz#2e8c34feff61affa96dc895234ddfc1ea4ec7515"
+  integrity sha512-u+IgG7AG0MXJTKcdzAIYxCm+W5FcnA9M28203Awl6jIcE3/+9OtEyUX4Wv64y7XNKEVRKPot52IV4V6x7FlF5Q==
   dependencies:
     unipointer "^2.3.0"
 
@@ -6368,8 +6382,8 @@ union-value@^1.0.0:
 
 unipointer@^2.3.0:
   version "2.3.0"
-  resolved "https://registry.npm.taobao.org/unipointer/download/unipointer-2.3.0.tgz#ba0dc462ce31c2a88e80810e19c3bae0ce47ed9f"
-  integrity sha1-ug3EYs4xwqiOgIEOGcO64M5H7Z8=
+  resolved "https://registry.npmjs.org/unipointer/-/unipointer-2.3.0.tgz#ba0dc462ce31c2a88e80810e19c3bae0ce47ed9f"
+  integrity sha512-m85sAoELCZhogI1owtJV3Dva7GxkHk2lI7A0otw3o0OwCuC/Q9gi7ehddigEYIAYbhkqNdri+dU1QQkrcBvirQ==
   dependencies:
     ev-emitter "^1.0.1"
 
@@ -6399,8 +6413,8 @@ unique-slug@^2.0.0:
 
 universalify@^0.1.0:
   version "0.1.2"
-  resolved "https://registry.nlark.com/universalify/download/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
-  integrity sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY=
+  resolved "https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
+  integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -6759,35 +6773,35 @@ ws@^6.2.1:
   dependencies:
     async-limiter "~1.0.0"
 
-xgplayer-hls.js@2.5.2:
+xgplayer-hls.js@^2.5.2:
   version "2.5.2"
-  resolved "https://registry.nlark.com/xgplayer-hls.js/download/xgplayer-hls.js-2.5.2.tgz#75cc4f264f02ab140266265f307059d506b86c92"
-  integrity sha1-dcxPJk8CqxQCZiZfMHBZ1Qa4bJI=
+  resolved "https://registry.npmjs.org/xgplayer-hls.js/-/xgplayer-hls.js-2.5.2.tgz#75cc4f264f02ab140266265f307059d506b86c92"
+  integrity sha512-MjwefSe3DCIWLjWTrvD7iplGx2TdF5rqo/yj8AiR/1V3ZxBQZG4UndxAtfW9sqcMk5iqEQz+5oVbt7NAMm6YZQ==
   dependencies:
     deepmerge "2.0.1"
     event-emitter "^0.3.5"
     eventemitter3 "^4.0.7"
 
-xgplayer-subtitles@^1.0.9:
+xgplayer-subtitles@^1.0.13:
   version "1.0.14"
-  resolved "https://registry.nlark.com/xgplayer-subtitles/download/xgplayer-subtitles-1.0.14.tgz?cache=0&sync_timestamp=1631798448521&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fxgplayer-subtitles%2Fdownload%2Fxgplayer-subtitles-1.0.14.tgz#18f899306a964debf04030d9390e1c2af136f55f"
-  integrity sha1-GPiZMGqWTevwQDDZOQ4cKvE29V8=
+  resolved "https://registry.npmjs.org/xgplayer-subtitles/-/xgplayer-subtitles-1.0.14.tgz#18f899306a964debf04030d9390e1c2af136f55f"
+  integrity sha512-FHkB1qHd6zyt1w4ebzi3qZ9s3hn4oEY8gmh/mKFELI1yUp/UgyY0KqVCVJIgIl/hlZIw0ipDLlvsoXwmkye69A==
   dependencies:
     eventemitter3 "^4.0.7"
 
-xgplayer@2.28.1:
-  version "2.28.1"
-  resolved "https://registry.nlark.com/xgplayer/download/xgplayer-2.28.1.tgz#d28127291222d8486ae0ca6f08a5dcfe7fa7ce70"
-  integrity sha1-0oEnKRIi2Ehq4MpvCKXc/n+nznA=
+xgplayer@^2.28.1:
+  version "2.30.1"
+  resolved "https://registry.npmjs.org/xgplayer/-/xgplayer-2.30.1.tgz#6ab15661efa1b3a26f80dd25221b7a5b1b3618f5"
+  integrity sha512-95jR1EfGMRY2/rKDVuC0iOolBhNWTg9htqUOqiASxiPAVNNQt1D5lZuL+4NTCw0sdp/8w9oROFnzwIerkaAlRQ==
   dependencies:
     chalk "^2.3.2"
     commander "^2.15.1"
-    danmu.js "^0.5.1"
+    danmu.js "^0.5.9"
     downloadjs "1.4.7"
     draggabilly "^2.2.0"
     event-emitter "^0.3.5"
     fs-extra "^5.0.0"
-    xgplayer-subtitles "^1.0.9"
+    xgplayer-subtitles "^1.0.13"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
