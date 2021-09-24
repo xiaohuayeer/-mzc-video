@@ -2,7 +2,7 @@
  * @Author: mzc
  * @Date: 2021-09-22 16:01:40
  * @Last Modified by: mzc
- * @Last Modified time: 2021-09-23 16:16:50
+ * @Last Modified time: 2021-09-24 10:57:45
  */
 /**
  * @desc 单屏组件
@@ -19,7 +19,7 @@ import "./screen.css";
 import "antd/dist/antd.css";
 
 export default function OneScreen(props) {
-  const { list, width, height, id } = props;
+  const { list, width, height, id, needSreenShot } = props;
   const { screenShot } = props;
   const [display, setDisplay] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -95,7 +95,11 @@ export default function OneScreen(props) {
             })}
           </Select>
         </div>
-        <div className="mzc-screenShot" onClick={handleScreenShot}>
+        <div
+          className="mzc-screenShot"
+          onClick={handleScreenShot}
+          style={{ display: needSreenShot ? "flex" : "none" }}
+        >
           <span>截图标记</span>
           <img src={WjPng} alt="" />
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import OneScreen from "./oneScreen";
 
 export default function MultiScreen(props) {
-  const { width, height, listOne, listTwo, listThree } = props;
+  const { width, height, listOne, listTwo, listThree, needSreenShot } = props;
   const { screenShot } = props;
   return (
     <div style={{ display: "flex", width, height }}>
@@ -10,6 +10,7 @@ export default function MultiScreen(props) {
         width={(width / 5) * 3}
         height={height}
         id="hls_one"
+        needSreenShot={needSreenShot}
         list={listOne}
         screenShot={screenShot}
       />
@@ -17,6 +18,7 @@ export default function MultiScreen(props) {
         <OneScreen
           width={(width / 5) * 2}
           height={height / 2}
+          needSreenShot={needSreenShot}
           id="hls_two"
           list={listTwo}
           screenShot={screenShot}
@@ -25,6 +27,7 @@ export default function MultiScreen(props) {
           width={(width / 5) * 2}
           height={height / 2}
           id="hls_three"
+          needSreenShot={needSreenShot}
           list={listThree}
           screenShot={screenShot}
         />

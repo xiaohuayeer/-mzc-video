@@ -2,7 +2,7 @@ import React from "react";
 import OneScreen from "./oneScreen";
 
 export default function TwoScreen(props) {
-  const { listOne, listTwo, width, height } = props;
+  const { listOne, listTwo, width, height, needSreenShot } = props;
   const { screenShot } = props;
   return (
     <div className="mzc-twoScreen" style={{ width, height, display: "flex" }}>
@@ -10,6 +10,7 @@ export default function TwoScreen(props) {
         width={width / 2}
         height={height}
         id="hls_one"
+        needSreenShot={needSreenShot}
         list={listOne}
         screenShot={screenShot}
       />
@@ -18,6 +19,7 @@ export default function TwoScreen(props) {
         height={height}
         id="hls_two"
         list={listTwo}
+        needSreenShot={needSreenShot}
         screenShot={screenShot}
       />
     </div>

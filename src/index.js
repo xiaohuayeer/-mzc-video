@@ -1,15 +1,15 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, createContext } from "react";
 import ReactDOM from "react-dom";
 import Index from "./components/index";
 
 const App = (props) => {
-  const { width, height, stuList, teaList, otherList } = props;
+  const { width, height, stuList, teaList, otherList, needSreenShot } = props;
   const { screenShot } = props;
-
   const content = useMemo(() => {
     return (
       <Index
         width={width}
+        needSreenShot={needSreenShot}
         height={height}
         teaList={teaList}
         stuList={stuList}

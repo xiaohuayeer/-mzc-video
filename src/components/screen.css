@@ -83,7 +83,6 @@
   font-size: 14px;
   width: 75px;
   height: 35px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }

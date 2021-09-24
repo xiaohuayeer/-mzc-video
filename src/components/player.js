@@ -1,21 +1,24 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import axios from "axios";
 import "xgplayer";
 import HlsJsPlayer from "xgplayer-hls.js";
 import ReactLoading from "react-loading";
+import { Context } from "./index";
 import "./player.css";
 
 let hls_one_id = "";
 let hls_two_id = "";
 let hls_three_id = "";
 
-export default function Tcplayer(props) {
+export default function MPlayer(props) {
   const { url, id, width, height } = props;
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
   const numRef = useRef(1);
   const iviRef = useRef(null);
   const onlyIdRef = useRef("");
+
+  const store = useContext(Context);
 
   useEffect(() => {
     onlyIdRef.current = getHlsOnlyId();
@@ -38,6 +41,19 @@ export default function Tcplayer(props) {
       console.log("销毁");
     };
   }, []);
+
+  /**
+   * @desc 主屏控制三屏
+   * @param {Boolean} store.playStatus
+   */
+  useEffect(() => {
+    if (store.playStatus) {
+      iviRef.current && iviRef.current.play();
+    } else {
+      iviRef.current && iviRef.current.pause();
+    }
+  }, [store.playStatus]);
+
   // 播放器实例化
   const load = (id, src) => {
     let ivi = null;
@@ -45,6 +61,7 @@ export default function Tcplayer(props) {
       id,
       url: src,
       volume: id === "hls_one" ? 0.5 : 0,
+      controls: id === "hls_one" ? true : false,
       // error: true,
       autoplay: true,
       playsinline: true,
@@ -60,20 +77,23 @@ export default function Tcplayer(props) {
         manifestLoadingTimeOut: 30000,
       }, //hls.js可选配置项
     });
-    console.log("ivi", ivi);
     // 监听播放报错
     ivi.on("error", function (error) {
       console.log("error", src);
     });
-    // ivi.on("play", function (play) {
-    //   console.log("play", src);
-    // });
+    ivi.on("play", function (play) {
+      if (id === "hls_one") {
+        store.setPlayStatus(true);
+      }
+    });
     // ivi.on("playing", function (playing) {
     //   console.log("playing", src);
     // });
-    // ivi.on("pause", function (pause) {
-    //   console.log("pause", src);
-    // });
+    ivi.on("pause", function (pause) {
+      if (id === "hls_one") {
+        store.setPlayStatus(false);
+      }
+    });
     // ivi.on("ended", function (ended) {
     //   console.log("ended", src);
     // });
