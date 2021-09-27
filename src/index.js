@@ -5,6 +5,7 @@ import Index from "./components/index";
 const App = (props) => {
   const { width, height, stuList, teaList, otherList, needSreenShot } = props;
   const { screenShot } = props;
+
   const content = useMemo(() => {
     return (
       <Index

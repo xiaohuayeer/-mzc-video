@@ -82,17 +82,13 @@ export default function MPlayer(props) {
       console.log("error", src);
     });
     ivi.on("play", function (play) {
-      if (id === "hls_one") {
-        store.setPlayStatus(true);
-      }
+      store.setPlayStatus(true);
     });
     // ivi.on("playing", function (playing) {
     //   console.log("playing", src);
     // });
     ivi.on("pause", function (pause) {
-      if (id === "hls_one") {
-        store.setPlayStatus(false);
-      }
+      store.setPlayStatus(false);
     });
     // ivi.on("ended", function (ended) {
     //   console.log("ended", src);
@@ -103,9 +99,14 @@ export default function MPlayer(props) {
     // ivi.on("seeked", function (seeked) {
     //   console.log("seeked", src);
     // });
-    // ivi.on("timeupdate", function (timeupdate) {
-    //   console.log("timeupdate", src);
-    // });
+    ivi.on("timeupdate", function (time) {
+      if (id === "hls_one") {
+        let time = ivi.currentTime;
+        if (typeof time === "number") {
+          store.setSchedule(parseInt(time));
+        }
+      }
+    });
     // ivi.on("waiting", function (waiting) {
     //   console.log("waiting", src);
     // });
@@ -143,11 +144,18 @@ export default function MPlayer(props) {
     // 监听正常播放
     ivi.on("canplay", function (e) {
       ivi && ivi.play();
+      if (store.schedule) {
+        // ivi && (ivi.currentTime = store.schedule)
+        // ivi && (ivi.currentTime = store.schedule);
+      }
     });
 
     // 流不稳定情况下，触发播放
     setTimeout(() => {
       ivi && ivi.play();
+      if (store.schedule) {
+        // ivi && (ivi.currentTime = store.schedule);
+      }
     }, 1000);
     iviRef.current = ivi;
   };

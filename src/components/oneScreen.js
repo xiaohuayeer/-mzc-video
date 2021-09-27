@@ -10,13 +10,14 @@
  * @param {Number} width 宽度
  * @param {Number} height 高度
  */
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import Player from "./player";
 import WjPng from "./i/jp.png";
 import ReactLoading from "react-loading";
 import { Select } from "antd";
 import "./screen.css";
 import "antd/dist/antd.css";
+import { Context } from "./index";
 
 export default function OneScreen(props) {
   const { list, width, height, id, needSreenShot } = props;
@@ -26,6 +27,7 @@ export default function OneScreen(props) {
   const [screenId, setScreenId] = useState("");
   const [url, setUrl] = useState("");
   const moveRef = useRef(null);
+  const store = useContext(Context);
   let _id = id ? id : "hls_one";
   useEffect(() => {
     if (list.length) {
@@ -51,6 +53,9 @@ export default function OneScreen(props) {
     setTimeout(() => {
       setLoading(false);
     }, 100);
+    if (id === "hls_one") {
+      store.setSchedule(0);
+    }
   };
   const handleScreenShot = () => {
     const video = document.querySelector(`#${_id} video`);
